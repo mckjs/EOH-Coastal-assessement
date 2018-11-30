@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9bed1d9d-4ea8-4cfa-b62b-616102983106" activeEnvironment="Default" name="assessment" resourceRoot="${workspaceDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" defaultScriptLanguage="Groovy" encryptionMode="Not encrypted" updated="2.5.0 2018-09-14T14:45:07Z" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.LoadTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Print Report Statistics" value="false"/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Report to Generate" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="LoadTest" value="&lt;all>"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="ThreadCount" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.4.0/bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Limit" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="68e850c8-9795-414f-ab5a-c537adb97c41" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://dog.ceo" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://dog.ceo</con:endpoint></con:endpoints><con:resource name="List all breeds" path="/api/breeds/list/all" id="bc0dc4b4-8746-46b9-974a-387a0cb54b0e"><con:settings/><con:parameters><con:parameter><con:name>breedtype</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="Method 1" id="891e1acb-2525-4a85-9b61-8bc921a88996" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403 404</con:status><con:params/><con:element xmlns:bre="https://dog.ceo/breed/">bre:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:bre="https://dog.ceo/breed/">bre:Response</con:element></con:representation><con:request name="Request 1" id="d9ae2adb-292d-4b1e-8eac-669b7046c085" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo/</con:endpoint><con:request/><con:originalUri>https://dog.ceo/dog-api/</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="By breed" path="/api/breed/{value}/images" id="cea68e54-0c03-40c8-877a-c578b7638cba"><con:settings/><con:parameters><con:parameter><con:name>value</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter></con:parameters><con:method name="Method 1" id="b1b1fb5c-78ef-4db9-a808-2ed5a7dc5c0f" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403 404</con:status><con:params/><con:element xmlns:bre="https://dog.ceo/api/breed">bre:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:bre="https://dog.ceo/api/breed">bre:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="8f3da79e-d3d8-4bb5-ab0b-b3dad3003b96" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request/><con:originalUri>https://dog.ceo/api/breed</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="value" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>value</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="By sub-breed" path="/api/breed/{value}/list" id="ae3b2902-f7c1-48db-9c49-aa58f8c22b4b"><con:settings/><con:parameters><con:parameter><con:name>value</con:name><con:value>retriever</con:value><con:style>TEMPLATE</con:style><con:default>retriever</con:default></con:parameter></con:parameters><con:method name="Method 1" id="f09b0e08-03f6-4c98-bc90-af35213b2803" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:list="https://dog.ceo/api/breed/hound/list">list:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:list="https://dog.ceo/api/breed/hound/list">list:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="182b08aa-e809-4016-a911-3b6643d32782" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request/><con:originalUri>https://dog.ceo/api/breed/hound/list</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>value</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="random" path="/api/breed/retriever/golden/images/random" id="b0fe356b-8e0f-48bd-bdd3-35e57837732e"><con:settings/><con:parameters><con:parameter><con:name>breeder</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>sub-breeder</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Method 1" id="01d380a0-6aa2-4d95-8090-1432ef10e071" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ran="https://dog.ceo/api/breed/retriever/golden/images/random">ran:Response</con:element></con:representation><con:request name="Request 1" id="a7eae78d-e98a-4326-925a-5cc5ba94adb6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request/><con:originalUri>https://dog.ceo/api/breed/retriever/golden/images/random</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="breeder" value="${Properties#breeder}"/>
+  <con:entry key="sub-breeder" value="${Properties#sub-breeder}"/>
+</con:parameters><con:parameterOrder><con:entry>breeder</con:entry><con:entry>sub-breeder</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="bf460e69-7287-40a2-9c7c-e2ce950428ba" name="Verfication"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="edb720b3-fbdd-4dcb-b7aa-352b560f0c00" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verify user can see list of all breeds" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="sent rest request" id="6b2ac7f1-a6ed-445a-aa46-05f992079bdf"><con:settings/><con:config service="https://dog.ceo" resourcePath="/api/breeds/list/all" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sent rest request" id="d4bc0dec-2c42-4bed-b947-d511c32f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request/><con:originalUri>https://dog.ceo/breed/</con:originalUri><con:assertion type="Simple Contains" id="6b47ac9f-0ea9-43e6-afa4-eb6d5a1e2ecc" name="Contains message"><con:configuration><token>message</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="d8f7c08f-0447-4b06-be48-c3db10b268ed" name="Invalid HTTP Status Codes"><con:configuration><codes>400
+</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5ecc62d7-2dc1-4aac-88e2-7039518e6278" name="JsonPath Match"><con:configuration><path>$['message']</path><content>{"affenpinscher":[],"african":[],"airedale":[],"akita":[],"appenzeller":[],"basenji":[],"beagle":[],"bluetick":[],"borzoi":[],"bouvier":[],"boxer":[],"brabancon":[],"briard":[],"bulldog":["boston","french"],"bullterrier":["staffordshire"],"cairn":[],"cattledog":["australian"],"chihuahua":[],"chow":[],"clumber":[],"cockapoo":[],"collie":["border"],"coonhound":[],"corgi":["cardigan"],"cotondetulear":[],"dachshund":[],"dalmatian":[],"dane":["great"],"deerhound":["scottish"],"dhole":[],"dingo":[],"doberman":[],"elkhound":["norwegian"],"entlebucher":[],"eskimo":[],"frise":["bichon"],"germanshepherd":[],"greyhound":["italian"],"groenendael":[],"hound":["afghan","basset","blood","english","ibizan","walker"],"husky":[],"keeshond":[],"kelpie":[],"komondor":[],"kuvasz":[],"labrador":[],"leonberg":[],"lhasa":[],"malamute":[],"malinois":[],"maltese":[],"mastiff":["bull","tibetan"],"mexicanhairless":[],"mix":[],"mountain":["bernese","swiss"],"newfoundland":[],"otterhound":[],"papillon":[],"pekinese":[],"pembroke":[],"pinscher":["miniature"],"pointer":["german","germanlonghair"],"pomeranian":[],"poodle":["miniature","standard","toy"],"pug":[],"puggle":[],"pyrenees":[],"redbone":[],"retriever":["chesapeake","curly","flatcoated","golden"],"ridgeback":["rhodesian"],"rottweiler":[],"saluki":[],"samoyed":[],"schipperke":[],"schnauzer":["giant","miniature"],"setter":["english","gordon","irish"],"sheepdog":["english","shetland"],"shiba":[],"shihtzu":[],"spaniel":["blenheim","brittany","cocker","irish","japanese","sussex","welsh"],"springer":["english"],"stbernard":[],"terrier":["american","australian","bedlington","border","dandie","fox","irish","kerryblue","lakeland","norfolk","norwich","patterdale","russell","scottish","sealyham","silky","tibetan","toy","westhighland","wheaten","yorkshire"],"vizsla":[],"weimaraner":[],"whippet":[],"wolfhound":["irish"]}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="d0a1df08-0120-4abb-8864-32dbbbcd3699" name="JsonPath Count"><con:configuration><path>$['message']</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="generate response report" id="32e74c3a-7554-41f9-a27b-4d0a0586b497"><con:settings/><con:config><script>import static com.jayway.jsonpath.JsonPath.parse
+import java.text.SimpleDateFormat
+
+//Setup project dir to store files
+def projectdir = context.expand('${projectDir}')
+
+def date = new Date()
+sdf = new SimpleDateFormat("MMddyyyy HHmmss")
+def dateformat = sdf.format(date)
+//Get rest request response
+	def response = context.expand( '${sent rest request#Response}' )
+	def request = context.expand( '${sent rest request#Request}' )
+	def rawRequest = context.expand( '${sent rest request#RawRequest}' )
+//Store results of response in a file
+	log.info projectdir
+//	new File( projectdir + "/"+ dateformat + "_listofallbreeds_response.txt" ).write( request + "," + rawRequest + "," + response )
+</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="a2952a99-1704-4892-8316-6e035d2c6771" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verify “retriever” breed is within the list" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="sent rest request" id="6e45c433-d2c0-42f9-9dd7-7c2c69c90266"><con:settings/><con:config service="https://dog.ceo" resourcePath="/api/breeds/list/all" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sent rest request" id="d4bc0dec-2c42-4bed-b947-d511c32f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request/><con:originalUri>https://dog.ceo/breed/</con:originalUri><con:assertion type="Simple Contains" id="6b47ac9f-0ea9-43e6-afa4-eb6d5a1e2ecc" name="Contains message"><con:configuration><token>message</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="4d84905f-5901-4884-aef0-46505b5525c6" name="Contains “retriever”"><con:configuration><token>retriever</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="dfae98f7-b0b9-410f-bdca-3771b47da88b" name="Match content of [message]"><con:configuration><path>$['message']['retriever']</path><content>["chesapeake","curly","flatcoated","golden"]</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username>admin</con:username><con:password>admin</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="generate response report" id="336485ee-5993-4836-8c06-2200fa26fbba"><con:settings/><con:config><script>import static com.jayway.jsonpath.JsonPath.parse
+import java.text.SimpleDateFormat
+
+//Setup project dir to store files
+def projectdir = context.expand('${projectDir}')
+
+def date = new Date()
+sdf = new SimpleDateFormat("MMddyyyy HHmmss")
+def dateformat = sdf.format(date)
+//Get rest request response
+	def response = context.expand( '${sent rest request#Response}' )
+	def request = context.expand( '${sent rest request#Request}' )
+	def rawRequest = context.expand( '${sent rest request#RawRequest}' )
+//Store results of response in a file
+	new File( projectdir + "/"+ dateformat + "_checkifretrieverisinlist_response.txt" ).write( request + "," + rawRequest + "," + response )
+</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="0026034d-594a-463e-9b69-fc5fd16c53fb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="verify user can sent a request to get a specific breed" searchProperties="true"><con:settings/><con:testStep type="groovy" name="data" id="ced4ade8-8ad6-4f07-a8f5-ca4df0aee41a"><con:settings/><con:config><script>import static com.jayway.jsonpath.JsonPath.parse
+import java.text.SimpleDateFormat
+//Setup project dir to store files
+def projectdir = context.expand('${projectDir}')
+
+def date = new Date()
+sdf = new SimpleDateFormat("MMddyyyy HHmmss")
+def dateformat = sdf.format(date)
+
+//Set up data input and expected response for rest request
+def parameter = [['retriever',["chesapeake","curly","flatcoated","golden"]],['hound', ["afghan","basset","blood","english","ibizan","walker"]]];
+
+//Loop throught each dogtype and assert response
+for (item in parameter) {
+def input = item[0];
+
+def expectedResponse = item[1];
+
+//Set rest request value as input
+	testRunner.testCase.testSteps["sent rest request"].setPropertyValue( "value", input )
+	
+//Run the test step sent rest request
+	def tst = testRunner.runTestStepByName("sent rest request")
+	def request = context.expand( '${sent rest request#Request}' )
+	def endpoint = context.expand( '${sent rest request#Endpoint}' )
+	def rawRequest = context.expand( '${sent rest request#RawRequest}' )
+
+//Get rest request response
+	def response = context.expand( '${sent rest request#Response}' )
+	def actualResponse = parse(response).read('$.message')
+//Store results of response in a file
+	new File( projectdir + "/"+ dateformat + "_" + input + "_response.txt" ).write( rawRequest + "," + response )
+
+//Assert that the expecte and actual response matches
+	assert actualResponse ==  expectedResponse
+}
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="sent rest request" id="0d6a7dac-c416-44fb-a450-05d3cb27d1f0"><con:settings/><con:config service="https://dog.ceo" methodName="Method 1" resourcePath="/api/breed/{value}/list" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sent rest request" id="019e1432-4978-4d79-ba1e-0c10812c88df" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://dog.ceo</con:endpoint><con:request>retriever</con:request><con:originalUri>https://dog.ceo/api/breed/hound/images</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9c569fec-e78b-4a65-9d6e-57dc82de2f43" name="Assert status is correct"><con:configuration><scriptText>import static com.jayway.jsonpath.JsonPath.parse
+
+def response = context.expand( '${sent rest request#Response}' )
+
+def status = parse(response).read('$.status')
+def message = parse(response).read('$.message')
+//log.info status 
+
+assert status=='success'
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="846c019e-7123-4ab6-97c0-de220e288f1d" name="Assert response back for retriever" disabled="true"><con:configuration><scriptText>//Assert response value and output to csv file
+import static com.jayway.jsonpath.JsonPath.parse
+def generator = { String alphabet, int n ->
+  new Random().with {
+    (1..n).collect { alphabet[ nextInt( alphabet.length() ) ] }.join()
+  }
+}
+
+generator( (('A'..'Z')+('0'..'9')).join(), 9 )
+def response = context.expand( '${sent rest request#Response}' )
+
+def message = parse(response).read('$.message')
+
+//assert message==["afghan","basset","blood","english","ibizan","walker"]
+assert message == ["chesapeake","curly","flatcoated","golden"]
+new File( "C:/Users/jerowine.mckay/SoapUI-Tutorials/a" + generator + "_response.txt" ).write( response )
+
+// To use another charset instead of the default one, do the following:
+//new File( "C:/Users/jerowine.mckay/SoapUI-Tutorials/a_response.txt" ).write( response, "UTF-8" )</scriptText></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="79b78c83-8be5-4cad-96e8-b4d7e4d7401f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify user can search on random image for golden retriever" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="a6f07dc9-3036-4b23-b8b6-13c8a038eba8"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>breeder</con:name><con:value>retriever</con:value></con:property><con:property><con:name>sub-breeder</con:name><con:value>golden</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="sent rest request" id="b9eb8e91-8687-47ca-98e0-0b9821a27575"><con:settings/><con:config service="https://dog.ceo" resourcePath="/api/breed/retriever/golden/images/random" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sent rest request" id="8f3da79e-d3d8-4bb5-ab0b-b3dad3003b96" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://dog.ceo</con:endpoint><con:request>golden retriever</con:request><con:originalUri>https://dog.ceo/api/breed</con:originalUri><con:assertion type="Simple Contains" id="bbded915-6a62-491b-85f6-06cf40b2b801" name="Contains"><con:configuration><token>retriever-golden</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="a47a4cdb-0de2-4d33-b7bb-58a057dad3df" name="Match content of [message]"><con:configuration><path>$['message']</path><content>https://images.dog.ceo/breeds/retriever-golden/*</content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="breeder" value="${Properties#breeder}"/>
+  <con:entry key="sub-breeder" value="${Properties#sub-breeder}"/>
+  <con:entry key="value" value="${Properties#sub-breeder}"/>
+</con:parameters><con:parameterOrder><con:entry>value</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="generate response report" id="f735e60c-6fec-4abb-ab6a-73b86bcfc750"><con:settings/><con:config><script>import static com.jayway.jsonpath.JsonPath.parse
+import java.text.SimpleDateFormat
+
+//Setup project dir to store files
+def projectdir = context.expand('${projectDir}')
+
+def date = new Date()
+sdf = new SimpleDateFormat("MMddyyyy HHmmss")
+def dateformat = sdf.format(date)
+//Get rest request response
+	def response = context.expand( '${sent rest request#Response}' )
+	def request = context.expand( '${sent rest request#Request}' )
+	def rawRequest = context.expand( '${sent rest request#RawRequest}' )
+//Store results of response in a file
+	new File( projectdir + "/"+ dateformat + "searchonrandomimaget_response.txt" ).write( request + ",," + response )
+</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/><con:authRepository/><con:tags/></con:soapui-project>
