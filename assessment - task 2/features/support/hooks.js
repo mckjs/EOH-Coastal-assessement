@@ -8,7 +8,7 @@ BeforeAll(function () {
 
 //After hooks run after the last step of each scenario, even when steps are failed, undefined, pending, or skipped.
 After(function (testCase) {
-    console.log(">>>>>>>>>>>>>>>>>>>>>>>>After step>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.....")
+
    /*take screenshot every time there is a failure and include it in the cucumber report*/
     let world = this;
     if (testCase.result.status === Status.FAILED) {
@@ -20,7 +20,7 @@ After(function (testCase) {
 });
 
 // Asynchronous Promise
-After(function () {
-    // Assuming this.driver is a selenium webdriver
-    return driver.quit();
-});
+// After(function () {
+//     // Assuming this.driver is a selenium webdriver
+//     return driver.quit();
+// });
