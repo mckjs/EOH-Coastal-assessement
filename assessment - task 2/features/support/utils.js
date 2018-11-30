@@ -1,11 +1,15 @@
 const assert = require('assert');
-const driver = require('../support/myworld');
+const driver = require('./myworld');
 const webdriver = require('selenium-webdriver');
 const until = webdriver.until;
 const By = webdriver.By;
 const promise = require("bluebird");
 
 module.exports = {
+/*
+* This is a wrapper function to wait for the element to appear in DOM
+* Every Action keyword function looking for any action should call thus function before performing any operation
+* */
     waitForElementLocated: function (selector) {
         return driver.wait(until.elementLocated(selector), 30000);
     },
@@ -43,11 +47,22 @@ module.exports = {
     click: function (selector) {
         return driver.wait(until.elementLocated(selector), 20000).then(element => {
             return driver.wait(until.elementIsVisible(driver.findElement(selector))).then(function () {
-                return element.click();
+                return driver.wait(until.elementIsEnabled(driver.findElement(selector))).then(function(){
+                    return element.click();
+                })
             })
         })
     },
+    assertSelectorIsNotDisplayed :function(selector){
+        return driver.findElement(selector).isDisplayed().then(function(displayed) {
+                return assert.equal(displayed, false);
+                return displayed;
+            }).catch(function(){
+                let resultsDisplayed  = false;
+                return assert.equal(resultsDisplayed, false);
 
+            })
+    },
     assertSelectorIsDisplayed : function (selector) {
         return this.waitForElementLocated(selector).then(function () {
             return driver.findElement(selector).isDisplayed().then(function (displayed) {

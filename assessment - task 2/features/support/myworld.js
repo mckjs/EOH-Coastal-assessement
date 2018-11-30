@@ -1,3 +1,4 @@
+/*Setup driver*/
 let driverSupport = function() {
 
     const webdriver = require('selenium-webdriver');
