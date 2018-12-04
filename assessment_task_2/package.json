@@ -22,16 +22,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.1.2",
     "assert": "^1.4.1",
     "babel-register": "^6.26.0",
     "bluebird": "^3.5.2",
+    "chai": "^4.1.2",
     "chromedriver": "^2.43.1",
     "cucumber": "^5.0.2",
     "cucumber-html-reporter": "^4.0.4",
     "cucumber-parallel": "^2.0.3",
     "cucumber-pretty": "^1.4.4",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "^3.6.0"
   },
   "dependencies": {
     "dateformat": "^3.0.3",

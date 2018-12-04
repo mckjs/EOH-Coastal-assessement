@@ -29,6 +29,7 @@ module.exports = {
         eDbxRole: By.name('RoleId'),
         eDbxOption: By.tagName('option'),
         eTableDataRow : By.className('smart-table-data-row ng-scope'),
+        eTableDataRowSelected : By.className('smart-table-data-row ng-scope selected'),
         eInputSearchBox : By.className('pull-right ng-pristine ng-valid')
     },
     /*Function is used to navigate to url, url are stored in a separate file*/

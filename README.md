@@ -36,8 +36,15 @@ Cucumber HTML report test/report/cucumber_report.html generated successfully.
 ```
 
 ## Test Scenario Issues:
-During this test execution you will notice that there is a bug when adding an user, and the value when selecting a
-Customer does not get stored at all.
+Step Name : **Then the user must see {string} added successfully**
 
-I have update the test to refresh first, before searching for the user and verifying the user is update successfully
+During this scripting the test I noticed that there is a bug when adding an user, and the value when selecting a radio button option, the 
+Customer values does not get stored at pulled through to the table row.
+
+When refreshing the page, the page get set to the default state.
+
+In order for the scenario to passed, I uncommented the test step and added additional steps to check for the user name and email address
+
+1. **the user must see user name as {string} in the User Name cell** 
+2. **the user must see email address {string} in E-mail cell**
 
