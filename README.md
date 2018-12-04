@@ -19,10 +19,10 @@
 $ node -v
 v8.9.4
 ```
-- Open your editor and import project **assessement-task-2**
+- Open your editor and import project **assessement_task_2**
 - Install all the packages you need that is in the package.json file...
 ```sh
-$ cd assessment\ -\ task\ 2
+$ cd assessmen_task_2
 $ npm install 
 ```
 - Execute test by simply run the following command
