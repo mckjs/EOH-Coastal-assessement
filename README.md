@@ -22,7 +22,7 @@ v8.9.4
 - Open your editor and import project **assessement_task_2**
 - Install all the packages you need that is in the package.json file...
 ```sh
-$ cd assessmen_task_2
+$ cd assessment_task_2
 $ npm install 
 ```
 - Execute test by simply run the following command
@@ -34,3 +34,10 @@ $ npm test
 $ node ./index.js
 Cucumber HTML report test/report/cucumber_report.html generated successfully.
 ```
+
+## Test Scenario Issues:
+During this test execution you will notice that there is a bug when adding an user, and the value when selecting a
+Customer does not get stored at all.
+
+I have update the test to refresh first, before searching for the user and verifying the user is update successfully
+

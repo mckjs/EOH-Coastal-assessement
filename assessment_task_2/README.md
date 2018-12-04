@@ -5,8 +5,8 @@ Automation assessment using open source tools
 
 This assessment consist out of the following structure:
    > - features
-   > - support
-   >     - step_definitions
+   >    - support
+   >    - step_definitions
    > - node_modules
    > - pages
 
@@ -19,7 +19,7 @@ This assessment consist out of the following structure:
    > - index.js
    > - package.json
    > - package-lock.json
-   > - README.ms
+   > - README.md
    > - rerun.txt
    > - usage.txt
 
@@ -34,7 +34,11 @@ $ node ./index.js
 Cucumber HTML report test/report/cucumber_report.html generated successfully.
 ```
 
-## Issues
+## Test Scenario Issues:
 During this test execution you will notice that there is a bug when adding an user, and the value when selecting a
-Customer does not get stored at all
+Customer does not get stored at all.
+
+I have update the test to refresh first, before searching for the user and verifying the user is update successfully
+
+
 
