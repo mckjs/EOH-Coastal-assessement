@@ -1,4 +1,4 @@
-# EOH-Coastal-assessement
+#PLEASE NOTE THAT THIS REPO IS OLD AND MIGHT NOT RUN
 
 ## Assessment – task - 1
 ### Install and setup
